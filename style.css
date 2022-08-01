@@ -1,23 +1,31 @@
 header{
     background-image: url('./img/beachshowcase.jpg');
-    height: 1200px;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
 }
 h1{
     font-size: 50px;
-    padding-top: 500px;
+    /* padding-top: 500px; */
 }
 h1, p{
     color: #926239;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    /* text-align: center; */
 }
 p{
     padding: 30px 0;
     font-size: 20px;
 }
 #head__btn{
-    display: block;
-    margin: 0 auto;
+    /* display: block;
+    margin: 0 auto; */
     background-color: transparent;
     padding: 15px 20px;
     font-size: 18px;
@@ -47,10 +55,13 @@ p{
 .main2 p{
     color: #926239;
 }
-footer div{
+footer{
+    display: flex;
+}
+/* footer div{
     width: 33%;
     display: inline-block;
-}
+} */
 .foot-div1{
     background-color: #926239;
 }
@@ -63,4 +74,11 @@ footer div p{
 }
 .foot-div1 p{
     color: #fff;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 500px){
+    footer{
+        flex-direction: column;
+    }
 }
